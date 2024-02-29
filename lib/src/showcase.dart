@@ -299,7 +299,6 @@ class Showcase extends StatefulWidget {
   })  : height = null,
         width = null,
         container = null,
-        staticContainer = null,
         assert(overlayOpacity >= 0.0 && overlayOpacity <= 1.0,
             "overlay opacity must be between 0 and 1."),
         assert(onTargetClick == null || disposeOnTap != null,
