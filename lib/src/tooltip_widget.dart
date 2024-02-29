@@ -43,6 +43,7 @@ class ToolTipWidget extends StatefulWidget {
   final TextStyle? titleTextStyle;
   final TextStyle? descTextStyle;
   final Widget? container;
+  final Widget? staticContainer;
   final Color? tooltipBackgroundColor;
   final Color? textColor;
   final bool showArrow;
@@ -95,6 +96,7 @@ class ToolTipWidget extends StatefulWidget {
     this.titlePadding,
     this.descriptionPadding,
     this.titleTextDirection,
+    this.staticContainer,
     this.descriptionTextDirection,
   }) : super(key: key);
 
@@ -523,6 +525,7 @@ class _ToolTipWidgetState extends State<ToolTipWidget>
             ),
           ),
         ),
+        if (widget.staticContainer != null) ...[widget.staticContainer!],
       ],
     );
   }
