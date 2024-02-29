@@ -624,6 +624,12 @@ class _ShowcaseState extends State<Showcase> {
             titleTextDirection: widget.titleTextDirection,
             descriptionTextDirection: widget.descriptionTextDirection,
           ),
+          if (widget.staticContainer != null) ...[
+            Align(
+              alignment: Alignment.center,
+              child: widget.staticContainer!,
+            )
+          ],
         ],
       ],
     );
