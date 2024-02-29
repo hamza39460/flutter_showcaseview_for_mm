@@ -295,6 +295,7 @@ class Showcase extends StatefulWidget {
     this.descriptionTextDirection,
     this.onBarrierClick,
     this.disableBarrierInteraction = false,
+    this.staticContainer,
   })  : height = null,
         width = null,
         container = null,
