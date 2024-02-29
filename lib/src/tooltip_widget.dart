@@ -525,7 +525,7 @@ class _ToolTipWidgetState extends State<ToolTipWidget>
             ),
           ),
         ),
-        if (widget.staticContainer != null) ...[widget.staticContainer!],
+        // if (widget.staticContainer != null) ...[widget.staticContainer!],
       ],
     );
   }
